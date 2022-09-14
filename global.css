@@ -1,0 +1,82 @@
+/* global.css */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: #fce2c1;
+    color: rgb(239, 12, 12);
+}
+/* To center everything in game */
+.game {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Title of the game */
+.title {
+    position: absolute;
+    top: 0;
+    font-size: 4rem;
+}
+
+/* Score Board */
+.score {
+    display: flex;
+    width: 30vw;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 70px;
+    z-index: 1;
+}
+
+/* Score */
+.p-count,
+.c-count {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+/* Options buttons */
+.options {
+    display: flex;
+    width: 100vw;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+}
+
+/* Styling for all buttons (need to fit images) */
+.rock,
+.dynamite,
+.scissors {
+    padding: 1rem;
+    width: 160px;
+    border-radius: 10px;
+    background: rgb(240, 241, 240);
+    cursor: pointer;
+    text-decoration: #101010;
+}
+
+.choice {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Reload button style */
+.retry {
+    display: none;
+    margin-top: 2rem;
+    padding: 1rem;
+    background: rgb(239, 16, 9);
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/*.result {
+}
