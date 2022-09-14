@@ -1,40 +1,51 @@
+<!-- index.html -->
+
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <!-- metadata -->
-    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <!-- title and favicon -->
-    <title>Web App</title>
-    <link rel="icon" type="image/x-icon" href="/assets/alchemy-favicon.png" />
+    <head>
+        <link rel="stylesheet" href="global.css" />
+        <title>Rock, Dynamite, Scissors</title>
+    </head>
+    <body>
+        <section class="game">
+            <!--Title -->
+            <div class="title">Rock, Dynamite, Scissors</div>
 
-    <!-- js -->
-    <script type="module" src="app.js"></script>
+            <!--Scoreboard (let 'me'==='computer') -->
+            <div class="score">
+                <div class="playerScore">
+                    <h2>You</h2>
+                    <p class="p-count count">0</p>
+                </div>
+                <div class="computerScore">
+                    <h2>Me</h2>
+                    <p class="c-count count">0</p>
+                </div>
+            </div>
 
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600&family=Titillium+Web:wght@200;400;600&display=swap">
+            <div class="choice">At the same time, ok?</div>
 
-    <!-- css -->
-    <link rel="stylesheet" href="/styles/reset.css" />
-    <link rel="stylesheet" href="/styles/global.css" />
-</head>
+            <!--Choices Left -->
+            <div class="choicesleft">Best of Ten: 10</div>
 
-<body>
-    <header>
-        <img src="/assets/html_css_js.png">
-        <h1>Web App</h1>
-    </header>
+            <!--Options -->
 
-    <main>
+            <div class="options">
+                <button class="rock">Rock</button>
+                <button class="dynamite">Dynamite</button>
+                <button class="scissors">Scissors</button>
+            </div>
 
-    </main>
+            <!--Results-->
+            <div class="result"></div>
 
-</body>
+            <!--Reload game -->
+            <button class="retry"></button>
+        </section>
 
+        <script src="app.js"></script>
+    </body>
 </html>
